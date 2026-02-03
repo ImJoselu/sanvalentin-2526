@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>¿Quieres ser mi San Valentín?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card">
+    <h1>💖 ¿Quieres ser mi cita de San Valentín? 💖</h1>
+    <p>Prometo que nos comeremos mucho, nos querremos mucho y nos daremos muchos mimos despues en casa 😘</p>
+
+    <div class="buttons">
+      <button id="yesBtn">Sí 💘</button>
+      <button id="noBtn">No ☠️</button>
+    </div>
+
+    <div id="message"></div>
+
+    <!-- Foto feliz -->
+    <div id="happyPhoto" class="photo hidden">
+      <p>💑 Foto de nosotros felices 💑</p>
+      <img src="resources/foto-feliz.jpg" alt="Nuestra foto">
+    </div>
+
+    <!-- Estado triste -->
+    <div id="sadState" class="hidden">
+      <p>💔 Esto no era lo que esperaba…</p>
+      <img src="resources/triste.gif" alt="GIF triste">
+      <p>¿Te has equivocado verdad?</p>
+      <button id="retryBtn">😅 Me había equivocado</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

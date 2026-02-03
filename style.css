@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.8s ease;
+  }
+  
+  body.sad {
+    background: #111;
+  }
+  
+  /* Aplica gris SOLO a lo que quieres */
+  body.sad .card > :not(#sadState) {
+    filter: grayscale(100%);
+  }
+
+  /* Aplica gris SOLO a lo que quieres */
+body.sad .card > :not(#sadState) {
+    filter: grayscale(100%);
+  }
+  
+
+  body.sad .card {
+    background: #222;
+    color: #eee;
+  }
+  
+  body.sad h1,
+    body.sad p {
+    color: #eee;
+    }
+
+  
+  .card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  }
+  
+  .buttons {
+    margin-top: 30px;
+  }
+  
+  button {
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  #yesBtn {
+    padding: 15px 30px;
+    font-size: 1.1em;
+    background-color: #ff4d6d;
+    color: white;
+  }
+  
+  #noBtn {
+    position: fixed;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    background-color: #e0e0e0;
+    color: #333;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  #message {
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #ff4d6d;
+  }
+  
+  .photo img,
+  #sadState img {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+  }
+  
+  #retryBtn {
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 1em;
+    background-color: #ff4d6d;
+    color: white;
+    border-radius: 25px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #retryBtn {
+    background-color: #ff4d6d;
+    color: white;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 77, 109, 0.8);
+    z-index: 1000; /* Siempre encima */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  #retryBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 77, 109, 1);
+  }
+  
+  
