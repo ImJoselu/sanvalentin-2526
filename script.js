@@ -20,6 +20,8 @@ function acceptLove() {
   sadState.classList.add("hidden");
   noBtn.style.display = "none";
   yesBtn.style.display = "none";
+  document.getElementById("addDateBtn").classList.remove("hidden");
+
 }
 
 yesBtn.addEventListener("click", acceptLove);
@@ -68,3 +70,10 @@ noBtn.addEventListener("click", () => {
 
 // 😅 Me había equivocado
 retryBtn.addEventListener("click", acceptLove);
+
+const addDateBtn = document.getElementById("addDateBtn");
+
+addDateBtn.addEventListener("click", () => {
+  window.location.href = "citas.html";
+});
+

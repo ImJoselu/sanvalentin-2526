@@ -121,4 +121,13 @@ body.sad .card > :not(#sadState) {
     box-shadow: 0 0 25px rgba(255, 77, 109, 1);
   }
   
-  
+  #addDateBtn {
+  margin-top: 20px;
+  padding: 14px 30px;
+  font-size: 1.1em;
+  background-color: #ff4d6d;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+}
